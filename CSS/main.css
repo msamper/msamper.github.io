@@ -1,0 +1,92 @@
+h1{
+  font-size: 75px;
+}
+
+p {
+  font-size: 20px;
+}
+
+body {
+    line-height: 1.8;
+    color: #f5f6f7;
+}
+
+.container-fluid {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.bg-1 { 
+    background-color: #42b9f4; /* Blue */
+    color: #ffffff;
+}
+
+.bg-2 { 
+    background-color: #000; /* Black */
+    color: #ffffff;
+}
+.bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+
+.bg-4 { 
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 75px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
