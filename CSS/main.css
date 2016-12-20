@@ -89,6 +89,14 @@
   animation: 1s blink step-end infinite;
 }
 
+@media (max-width: 640px) 
+{
+    .overlay
+    {
+        display: none;
+    }
+}
+
 @keyframes "blink" {
   from, to {
     color: transparent;
