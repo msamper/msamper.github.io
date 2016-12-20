@@ -1,44 +1,93 @@
-h1{
-  font-size: 75px;
+  body {
+      font: 20px Quicksand, sans-serif;
+      line-height: 1.8;
+      color: #250613;
+  }
+
+  p {font-size: 20px;}
+
+  img {
+    -webkit-filter: grayscale(50%);
+       -moz-filter: grayscale(50%);
+         -o-filter: grayscale(50%);
+        -ms-filter: grayscale(50%);
+            filter: grayscale(50%);
 }
 
-p {
-  font-size: 20px;
+.jumbotron {
+    padding: 0px;
 }
 
-body {
-    line-height: 1.8;
-    color: #f5f6f7;
+  .overlay {
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
 }
 
-.container-fluid {
-    padding-top: 90px;
-    padding-bottom: 90px;
+.carousel .item {
+  padding: 30px;
+  height: 670px;
+  background-color:#555;
+}
+.carousel img {
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 670px;
 }
 
-.bg-1 { 
-    background-color: #42b9f4; /* Blue */
-    color: #ffffff;
-}
+  .margin {margin-bottom: 45px;}
 
-.bg-2 { 
-    background-color: #000; /* Black */
-    color: #ffffff;
-}
-.bg-3 { 
-    background-color: #ffffff; /* White */
-    color: #555555;
-}
+  .bg-1 {
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background:url('../assets/fries.jpg') no-repeat center top #FFF
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #202030; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 120px;
+      padding-right: 120px
+  }
+  .navbar {
+      background-color: #202030;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
 
-.bg-4 { 
-    background-color: #2f2f2f;
-    color: #ffffff;
-}
+  .navbar-nav li a {
+      color: #250613;
+  }
 
-.blinking-cursor {
+  .navbar-nav  li a:hover {
+      color: #fff !important;
+  }
+
+  .blinking-cursor {
   font-weight: 100;
-  font-size: 75px;
-  color: #2E3D48;
+  font-size: 70px;
+  color: #fff;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;
@@ -51,7 +100,7 @@ body {
     color: transparent;
   }
   50% {
-    color: black;
+    color: white;
   }
 }
 
@@ -60,7 +109,7 @@ body {
     color: transparent;
   }
   50% {
-    color: black;
+    color: white;
   }
 }
 
@@ -69,7 +118,7 @@ body {
     color: transparent;
   }
   50% {
-    color: black;
+    color: white;
   }
 }
 
@@ -78,7 +127,7 @@ body {
     color: transparent;
   }
   50% {
-    color: black;
+    color: white;
   }
 }
 
@@ -87,6 +136,6 @@ body {
     color: transparent;
   }
   50% {
-    color: black;
+    color: white;
   }
 }

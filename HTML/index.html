@@ -1,47 +1,99 @@
 <!DOCTYPE html>
 
 <html>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/jsInit.js"></script>
 <head lang="en">
 	<title>Michael Samper</title>
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" href="../CSS/animate.css">
+
 	<link rel="icon" type="image/png" href="../assets/favicon.png">
-	<script src="https://use.fontawesome.com/4192a5300e.js"></script>
+	<link rel="stylesheet" href="../CSS/animate.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../CSS/main.css" media="screen" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Michael Samper</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="../assets/resume.pdf">Resume</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-	<div class="container-fluid bg-1 text-center">
-		<h1 class="animated slideInDown">Hi there!</h1>
-		<img src="../assets/HHM.jpg" class="animated fadeIn img-circle" alt="Michael" width="250" height="250">
-		<h1 class="animated slideInUp">I'm Michael.<span class="blinking-cursor">|</span></h1>
-	</div>
+	<div class="jumbotron">
+	<div class="overlay"><h1>Hi there, I'm Michael.<span class="blinking-cursor">|</span>
+	</h1>
+</div>
+</div>
+	<!-- First Container -->
+	<div class="background-carousel">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-	<div class="container-fluid bg-2 text-center">
 
-		<p><i class="fa fa-quote-left" aria-hidden="true"></i> I am a second year Computer Science student at the University of Florida. When I’m not working on projects or living in the library I enjoy making new dishes, traveling for hackathons, and trying new things! I’m a self-proclaimed foodie, tech-enthusiast, and collector of memories and experiences. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
-	</div>
-
-	<div class="container-fluid bg-3 text-center">
-		<h3>Where To Find Me?</h3>
-		<a href="https://www.linkedin.com/in/ms2015">
-			<i class="fa fa-linkedin fa-3x fa-fw" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/msamper13">
-				<i class="fa fa-twitter fa-3x fa-fw" aria-hidden="true"></i></a>
-				<a href="http://github.com/msamper">
-					<i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+			<!-- Wrapper for slides -->
+			<div id="wrapper" class="carousel-inner">
+				<div class="item active">
+					<img src="../assets/Betas.jpg">
 				</div>
+				<div class="item">
+					<img src="../assets/HLA.jpg">
+				</div>
+				<div class="item">
+					<img src="../assets/HLA_group.jpg">
+				</div>
+				<div class="item">
+					<img src="../assets/GOT.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
 
-				<footer class="container-fluid bg-4 text-center">
-					<p>Made by Michael Samper</p> 
-				</footer>
-			</body>
-			</html>
+	<!-- Second Container -->
+	<div id="about" class="container-fluid bg-2 text-center">
+		<h1 class="margin">About me</h1>
+		<p>I am a second year Computer Science student at the University of Florida.
+		 My interests include Web Development, Game Design, Cultural Awareness, <a href="http://www.ufbetas.org">Brotherhood</a>,
+	  and more.</p>
+		<p>I currently work at <a href="http://www.nexgenthinking.com/">nexGEN</a> at the University of Florida as a Software
+			Development intern, working on projects both internal and external. One of
+			my current projects is aimed at increasing millenial employee retention
+			through the creation of an analytics software.</p>
+			<p>When I'm not working on code, I spend my time educating others and sharing
+				my culture. I work as an ambassador for <a href="http://hispaniclatinoaffairs.multicultural.ufl.edu/">
+					Hispanic-Latino Affairs</a> at UF and I help put on meaningful programming such
+					as Spanish/Portuguese Conversation to help educate students and truly make UF
+				  a home away from home for the minority student population.</p>
+	</div>
+
+	<!-- Third Container -->
+	<div id="projects" class="container-fluid bg-3 text-center">
+		<h2 class="margin">Projects</h2>
+		<p>Creating software is what I love to do. These are a few of my favorite creations.</p>
+	</div>
+
+	<!-- Footer -->
+	<footer class="container-fluid bg-4 text-center">
+		<p>Made By Michael</p>
+	</footer>
+
+</body>
+</html>
