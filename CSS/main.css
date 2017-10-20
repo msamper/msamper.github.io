@@ -1,36 +1,30 @@
 *
 {
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
 }
 
-  body {
-      font: 20px Quicksand, sans-serif;
-      line-height: 1.8;
-      color: #250613;
-  }
-
-  p {font-size: 20px;}
-
-  img {
-    -webkit-filter: grayscale(50%);
-       -moz-filter: grayscale(50%);
-         -o-filter: grayscale(50%);
-        -ms-filter: grayscale(50%);
-            filter: grayscale(50%);
+body {
+  font: 20px Quicksand, sans-serif;
+  line-height: 1.8;
+  color: #250613;
 }
+
+p {font-size: 20px;}
 
 .jumbotron {
   padding: 0px;
 }
 
-  .overlay {
+.overlay {
+  background-color: rgba(0,0,0,0.5);
   color:#fff;
+  border-radius: 25px;
   position:absolute;
   z-index:12;
-  top:50%;
-  left:0;
-  width:100%;
+  top:60%;
+  left:25%;
+  width:50%;
   text-align:center;
 }
 
@@ -38,47 +32,51 @@
   padding-top: 30px;
 }
 
-  .margin {margin-bottom: 45px;}
+.margin {margin-bottom: 45px;}
 
-  .bg-1 {
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
-  }
-  .bg-2 {
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 {
-      background: #FFF
-      color: #555555;
-  }
-  .bg-4 {
-      background-color: #202030; /* Black Gray */
-      color: #fff;
-  }
-  .container-fluid {
-      padding: 100px;
-  }
-  .navbar {
-      background-color: #202030;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
+.bg-1 {
+  background-color: #1abc9c; /* Green */
+  color: #ffffff;
+}
+.bg-2 {
+  background-color: #474e5d; /* Dark Blue */
+  color: #ffffff;
+}
+.bg-3 {
+  background: #FFF
+  color: #555555;
+}
+.bg-4 {
+  background-color: #202030; /* Black Gray */
+  color: #fff;
+}
+.container-fluid {
+  padding: 100px;
+}
+.navbar {
+  background-color: #202030;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
 
-  .navbar-nav li a {
-      color: #250613;
-  }
+.navbar-nav li a {
+  color: #250613;
+}
 
-  .navbar-nav  li a:hover {
-      color: #fff !important;
-  }
+.navbar-nav  li a:hover {
+  color: #fff !important;
+}
 
-  .blinking-cursor {
+.navbar-brand:hover {
+  color: #fff !important;
+}
+
+.blinking-cursor {
   font-weight: 100;
   font-size: 70px;
   color: #fff;
@@ -89,12 +87,12 @@
   animation: 1s blink step-end infinite;
 }
 
-@media (max-width: 640px) 
+@media (max-width: 640px)
 {
-    .overlay
-    {
-        display: none;
-    }
+  .overlay
+  {
+    display: none;
+  }
 }
 
 @keyframes "blink" {
